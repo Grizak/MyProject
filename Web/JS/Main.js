@@ -27,14 +27,28 @@ let fare = {
   zone: {
     enter: 0,
     exit: 0,
+    enterd: false,
+    enterzone,
+    exitzone,
     enterfunc: function(fz) {
       this.enter = fz;
       console.log("You have enter'd fare zone " + fz)
+      this.enterd = true
     },
     exitfunc: function(fz) {
       this.exit = fz;
       console.log("You have exited fare zone " + fz)
-      fare.calc(fare.zone.enter, fare.zone.exit); // Correctly reference the outer 'fare' object
+      fare.calc(this.enter, this.exit); // Correctly reference the outer 'fare' object
+      this.enterd = false
+    },
+    toggleenterexit: function (fz) {
+      if (!this.enterd) {
+        this.enterzone = fz
+        this.enterfunc(this.enterzone)
+      } else if (this.enterd) {
+        this.exitzone = fz
+        this.exitfunc(this.exitzone)
+      }
     }
   }
 };
