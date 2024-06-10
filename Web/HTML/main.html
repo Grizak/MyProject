@@ -3,22 +3,41 @@
     <head>
       <meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>
-        MyProject
-      </title>
+      <title>MyProject</title>
       <link rel="stylesheet" href="../CSS/Main.css">
       <script src="../JS/Main.js"></script>
+      <script>
+        window.onload = document.getElementById('bal').textContent = fare.balance;
+      </script>
     </head>
     <body>
-      <button onclick="fare.add()">Add Balance</button>
-      <button onclick="fare.reset()">Reset Balance</button>
-      <button onclick="fare.zone.enterfunc(1)">Enter fare zone 1</button>
-      <button onclick="fare.zone.enterfunc(2)">Enter fare zone 2</button>
-      <button onclick="fare.zone.enterfunc(3)">Enter fare zone 3</button>
-      <button onclick="fare.zone.enterfunc(4)">Enter fare zone 4</button>
-      <button onclick="fare.zone.exitfunc(1)">Exit fare zone 1</button>
-      <button onclick="fare.zone.exitfunc(2)">Exit fare zone 2</button>
-      <button onclick="fare.zone.exitfunc(3)">Exit fare zone 3</button>
-      <button onclick="fare.zone.exitfunc(4)">Exit fare zone 4</button>
+      <div>
+        <div class="misc">
+          <h2>Misc</h2>
+          <button onclick="fare.add()">Add Balance</button>
+          <button onclick="fare.reset()">Reset Balance</button>
+          <p id="bal"></p>
+        </div>
+        <div class="fz1">
+          <h2>Fare zone 1</h2>
+          <button onclick="fare.zone.enterfunc(1)">Enter</button>
+          <button onclick="fare.zone.exitfunc(1)">Exit</button>
+        </div>
+        <div class="fz2">
+          <h2>Fare zone 2</h2>
+          <button onclick="fare.zone.enterfunc(2)">Enter</button>
+          <button onclick="fare.zone.exitfunc(2)">Exit</button>
+        </div>
+        <div class="fz3">
+          <h2>Fare zone 3</h2>
+          <button onclick="fare.zone.enterfunc(3)">Enter</button>
+          <button onclick="fare.zone.exitfunc(3)">Exit</button>
+        </div>
+        <div class="fz4">
+          <h2>Fare zone 4</h2>
+          <button onclick="fare.zone.enterfunc(4)">Enter</button>
+          <button onclick="fare.zone.exitfunc(4)">Exit</button>
+        </div>
+      </div>
     </body>
   </html>

@@ -1,0 +1,79 @@
+.misc {
+  align-items: column;
+	display: flex;
+	flex-direction: column;
+  width: 100vh;
+}
+
+.misc button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.misc h2 {
+  margin: 5px;
+}
+
+.fz1 {
+  align-items: column;
+	display: flex;
+	flex-direction: column;
+  width: 100vh;
+}
+
+.fz1 button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.fz1 h2 {
+  margin: 5px;
+}
+
+.fz2 {
+  align-items: column;
+	display: flex;
+	flex-direction: column;
+  width: 100vh;
+}
+
+.fz2 button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.fz2 h2 {
+  margin: 5px;
+}
+
+.fz3 {
+  align-items: column;
+	display: flex;
+	flex-direction: column;
+  width: 100vh;
+}
+
+.fz3 button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.fz3 p {
+  margin: 5px;
+}
+
+.fz4 {
+  align-items: column;
+	display: flex;
+	flex-direction: column;
+  width: 100vh;
+}
+
+.fz4 button {
+  margin: 5px;
+  padding: 5px;
+}
+
+.fz4 p {
+  margin: 5px;
+}
